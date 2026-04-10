@@ -20,8 +20,7 @@ sudo apt-get update -y
 
 # --- Step 2: Install Python Dependencies ---
 echo "🐍 Installing Python libraries..."
-# Includes markdownify for the LLM generator
-pip install rich mitmproxy playwright
+pip install rich mitmproxy playwright openai python-dotenv "typing-extensions==4.14.0" "pydantic<2.12.0"
 
 # --- Step 3: Install Playwright Browsers ---
 echo "🌐 Downloading Playwright browsers..."
@@ -30,9 +29,5 @@ playwright install chromium
 # --- Step 4: Install System Dependencies ---
 echo "🏗️  Installing system dependencies (this may take a minute)..."
 sudo playwright install-deps
-
-# --- Step 5: Make Python Scripts Executable (Optional convenience) ---
-echo "🔧 Setting permissions..."
-chmod +x *.py 2>/dev/null || true
 
 echo "✅ Setup Complete! You can now run your scripts."
