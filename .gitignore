@@ -1,3 +1,4 @@
 openapi_spec.json
 .env
 .env.local
+api_documentation.md
