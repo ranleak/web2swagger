@@ -30,4 +30,4 @@ playwright install chromium
 echo "🏗️  Installing system dependencies (this may take a minute)..."
 sudo playwright install-deps
 
-echo "✅ Setup Complete! You can now run your scripts."
+echo "✅ Setup Complete! You can now run your Web2Swagger."
